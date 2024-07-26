@@ -1,0 +1,100 @@
+:root {
+  --bg-color: rgb(52, 52, 52);
+  --primary-color: #e9e9e9;
+  --text-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.text-boxes {
+    border: 2px solid rgb(90, 90, 90);
+    width: 90vw;
+    height: 40vh;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(46, 46, 46);
+    padding: 20px;
+}
+
+#middle-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90vw;
+    height: 10vh;
+}
+
+#parent-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(18, 243, 157);
+    border: 0px;
+    outline: 0px;
+    border-radius: 20px;
+    font-size: larger;
+    width: 170px;
+    transition: all 0.5s ease-in-out;
+}
+
+.action-buttons:hover{
+    background-color: rgb(10, 192, 122);
+}
+
+.action-buttons:active{
+    background-color: rgb(10, 192, 122);
+    transform: scale(0.9);
+}
+
+.text-areas {
+    background-color: #0000;
+    color: white;
+    outline: 0;
+    border: 0;
+    font-size: large;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .text-boxes {
+        width: 40vw;
+        height: 90vh;
+    }
+
+    #middle-box {
+        width: 10vw;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+
+    #parent-box {
+        flex-direction: row;
+    }
+    
+}
